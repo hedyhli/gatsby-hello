@@ -8,9 +8,10 @@ export default ({ data }) => (
   <Layout>
     <Header>{data.site.siteMetadata.title}</Header>
     <p>{data.site.siteMetadata.description}</p>
-    <img css={css`
-      width: 400px;
-    `}
+    <img
+      css={css`
+        width: 400px;
+      `}
       src="https://source.unsplash.com/1600x900/?reactjs,dev"
       alt="from Unsplash"
     />
