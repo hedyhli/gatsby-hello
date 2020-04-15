@@ -3,7 +3,7 @@ import Navbar from "../components/navbar"
 import { css } from "@emotion/core"
 
 export default ({ children }) => (
-  <div
+  <div // FIXME #1 margin and max width etc css not working (index.js)
     css={css`
       margin: 3rem auto;
       max-width: 800;
