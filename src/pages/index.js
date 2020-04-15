@@ -2,13 +2,18 @@ import React from "react"
 import Layout from "../components/layout"
 import Header from "../components/header"
 import { graphql } from "gatsby"
+import { css } from "@emotion/core"
 
-export default ({data}) => (
+export default ({ data }) => (
   <Layout>
-    <div>
-      <Header>{data.site.siteMetadata.title}</Header>
-      <p>description description</p>
-    </div>
+    <Header>{data.site.siteMetadata.title}</Header>
+    <p>{data.site.siteMetadata.description}</p>
+    <img css={css`
+      width: 400px;
+    `}
+      src="https://source.unsplash.com/1600x900/?reactjs,dev"
+      alt="from Unsplash"
+    />
   </Layout>
 )
 
@@ -17,6 +22,7 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
       }
     }
   }

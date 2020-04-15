@@ -6,7 +6,9 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Hello World Site`,
+    title: `Hello Gatsby`,
+    description: `A hello-world Gatsby Site - following Gatsby tutorials.`,
+    shortDescription: `Hello, Gatsby.`
   },
   plugins: [
     `gatsby-plugin-emotion`,
