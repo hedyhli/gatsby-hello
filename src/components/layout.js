@@ -5,9 +5,9 @@ import { css } from "@emotion/core"
 export default ({ children }) => (
   <div
     css={css`
-      margin: 3rem auto, 
-      maxWidth: 800, 
-      padding: 0 1rem
+      margin: 3rem auto;
+      max-width: 800;
+      padding: 0 1rem;
     `}
   >
     <Navbar />

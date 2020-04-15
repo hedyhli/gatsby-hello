@@ -4,8 +4,8 @@ import { css } from "@emotion/core"
 const ListLink = props => (
   <li
     css={css`
-      display: inline-block, 
-      marginRight: 1rem
+      display: inline-block;
+      margin-right: 1rem;
   `}
   >
     <Link to={props.to}>{props.children}</Link>
@@ -15,18 +15,19 @@ const ListLink = props => (
 export default ({ children }) => (
   <div
     css={css`
-      background-color: lavendarblush;
+      background-color: lavenderblush;
     `}
   >
     <header
       css={css`
-        marginbottom: 1.5rem;
+        margin-bottom: 1.5rem;
       `}
     >
       <Link
         to="/"
         css={css`
-          textShadow: none, backgroundImage: none
+          text-shadow: none;
+          background-image: none;
         `}
       >
         <h3
@@ -39,8 +40,8 @@ export default ({ children }) => (
       </Link>
       <ul
         css={css`
-          listStyle: none, 
-          float: right
+          list-style: none;
+          float: right;
         `}
       >
         <ListLink to="/">Home</ListLink>
