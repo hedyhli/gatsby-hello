@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Hello Gatsby`,
+    title: `Hello, Gatsby`,
     description: `A hello-world Gatsby Site - following Gatsby tutorials.`,
     shortDescription: `Hello, Gatsby.`,
   },
