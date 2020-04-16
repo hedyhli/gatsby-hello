@@ -12,7 +12,7 @@ export default ({ data }) => (
       css={css`
         width: 400px;
       `}
-      src="https://source.unsplash.com/1600x900/?reactjs,dev"
+      src="https://source.unsplash.com/1600x900/?web,dev"
       alt="from Unsplash"
     />
   </Layout>
