@@ -15,6 +15,26 @@ export default ({ data }) => (
       src="https://source.unsplash.com/1600x900/?web,dev"
       alt="from Unsplash"
     />
+    <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+        {data.allMarkdownRemark.edges.map(({ node }) => (
+          <div key={node.id}>
+            <h3
+              css={css`
+                margin-bottom: ${rhythm(1 / 4)};
+              `}
+            >
+              {node.frontmatter.title}{" "}
+              <span
+                css={css`
+                  color: #bbb;
+                `}
+              >
+                — {node.frontmatter.date}
+              </span>
+            </h3>
+            <p>{node.excerpt}</p>
+          </div>
+        ))}
   </Layout>
 )
 
@@ -24,6 +44,19 @@ export const query = graphql`
       siteMetadata {
         title
         description
+      }
+    }
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            date(formatString: "DD MMMM, YYYY")
+          }
+          excerpt
+        }
       }
     }
   }
