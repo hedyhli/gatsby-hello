@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 export default () => (
   <Layout>
     <div>
-      <Header>Contact Me</Header>
+      <Header>Contact Page</Header>
       <p>Hello, this is my contact page! </p>
     </div>
   </Layout>
