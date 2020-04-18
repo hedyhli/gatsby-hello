@@ -15,12 +15,12 @@ export default ({ data }) => (
       src="https://source.unsplash.com/1600x900/?web,dev"
       alt="from Unsplash"
     />
-    <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
+    <h5>{data.allMarkdownRemark.totalCount} Posts</h5>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>
             <h3
               css={css`
-                margin-bottom: ${rhythm(1 / 4)};
+                margin-bottom: 20px;
               `}
             >
               {node.frontmatter.title}{" "}
@@ -46,7 +46,7 @@ export const query = graphql`
         description
       }
     }
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       totalCount
       edges {
         node {
