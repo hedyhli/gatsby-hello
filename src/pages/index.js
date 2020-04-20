@@ -32,22 +32,22 @@ export default ({ data }) => (
           >
             {node.frontmatter.title}{" "}
           </h3>
-          <h5
-            css={css`
-              color: #bbb;
-            `}
-          >
-            — {node.frontmatter.date}
-          </h5>
-
-          <p
-            css={css`
-              margin-bottom: 20px;
-            `}
-          >
-            {node.excerpt}
-          </p>
         </Link>
+        <h5
+          css={css`
+            color: #bbb;
+          `}
+        >
+          — {node.frontmatter.date}
+        </h5>
+
+        <p
+          css={css`
+            margin-bottom: 20px;
+          `}
+        >
+          {node.excerpt}
+        </p>
       </div>
     ))}
   </Layout>
