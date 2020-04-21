@@ -4,7 +4,9 @@ import "./layout.css"
 
 export default ({ children }) => (
   <div className="site-container">
-    <Navbar />
-    <div className="content">{children}</div>
+    <div className="content">
+      <Navbar />
+      {children}
+    </div>
   </div>
 )
