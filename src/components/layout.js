@@ -8,5 +8,3 @@ export default ({ children }) => (
     <div className="content">{children}</div>
   </div>
 )
-  </div>
-)
