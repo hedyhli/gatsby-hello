@@ -1,17 +1,12 @@
 import React from "react"
 import Navbar from "../components/navbar"
-import { css } from "@emotion/core"
+import "./layout.css"
 
 export default ({ children }) => (
-  <div
-    style={{ margin: `3rem auto`, maxWidth: 880 }}
-    css={css`
-      margin: 3rem auto;
-      max-width: 800;
-      padding: 0 1rem;
-    `}
-  >
+  <div className="site-container">
     <Navbar />
-    {children}
+    <div className="content">{children}</div>
+  </div>
+)
   </div>
 )
