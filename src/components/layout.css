@@ -10,3 +10,11 @@
 .content {
   flex: 1;
 }
+
+footer {
+  background-color: grey;
+  color: white;
+  padding: 10px 5px;
+  height: 80px;
+  width: 800px;
+}
