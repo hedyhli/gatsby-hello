@@ -8,5 +8,8 @@ export default ({ children }) => (
       <Navbar />
       {children}
     </div>
+    <footer>
+      <p>Gatsby Hello World site, made by Hedy Li, 2020. </p>
+    </footer>
   </div>
 )

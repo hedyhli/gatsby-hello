@@ -12,9 +12,10 @@
 }
 
 footer {
-  background-color: grey;
-  color: white;
+  background-color: #e0e0e0;
+  color: black;
   padding: 10px 5px;
-  height: 80px;
-  width: 800px;
+  height: 95px;
+  width: auto;
+  margin: 0 8rem;
 }
